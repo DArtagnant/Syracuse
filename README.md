@@ -13,7 +13,7 @@ Il existe trois fichiers python :
 
 ## Nombres
 Je vous conseille de tester les programmes avec :
-* *27* qui possède le meilleur ratio vol/nbr testé pour au  moins les nombres inféreurs à 10 millions
+* *27* qui possède le meilleur ratio vol/nbr testé pour au  moins les nombres inférieurs à 10 millions
 * *10709980568908647* qui possède la plus haute altitude [^1]
 * *2361235441021745907775* qui possède le plus long vol pour les nombres inférieurs à 2<sup>72</sup> [^1]
 * *77671* qui possède la plus haute altitude pour les nombres inférieurs à 100 000 [^1]
