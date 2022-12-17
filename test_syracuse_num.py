@@ -82,6 +82,6 @@ def test_vol(nbr, voulu):
     (4894984848264864984165468984966256131160456145041046412567,
         33041147725787838643116915648522228885333078979027063284832)
     ])
-def test_vol(nbr, voulu):
+def test_alt(nbr, voulu):
     sn = SN(nbr)
     assert sn.alt == voulu
