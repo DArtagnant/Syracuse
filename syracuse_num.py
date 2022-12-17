@@ -1,4 +1,3 @@
-#compatible python > 3.10
 import matplotlib.pyplot as plt
 
 def is_even(num:int) -> bool:
