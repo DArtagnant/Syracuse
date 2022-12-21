@@ -9,7 +9,7 @@ Pour lire le code vous pouvez utiliser l’éditeur basique mais je vous conseil
 
 ## Lancer
 
-Il existe trois fichiers python :
+Il existe quatres fichiers python :
 
 * *syracuse_num.py* s’occupe des calculs et d’afficher un graphique simple
 * *syracuse_graphs.py* permet d’afficher un graphique dynamique
