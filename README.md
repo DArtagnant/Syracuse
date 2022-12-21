@@ -2,8 +2,8 @@
 
 ## Dépendances
 
-Pour faire fonctionner le programme, il faut Python 3.10 ou supérieur ([télécharger Python](https://www.python.org/downloads/)) et avoir installé matplotlib ([installer matplotlib](https://www.tutorialspoint.com/how-to-install-matplotlib-in-python)).
-Les trois fichiers python doivent être dans le même répertoire.
+Pour faire fonctionner le programme, il faut Python 3.7 ou supérieur ([télécharger Python](https://www.python.org/downloads/)) et avoir installé matplotlib ([installer matplotlib](https://www.tutorialspoint.com/how-to-install-matplotlib-in-python)).
+Les fichiers python doivent être dans le même répertoire.
 
 Pour lire le code vous pouvez utiliser l’éditeur basique mais je vous conseille Visual Studio Code qui fonctionne aussi avec Java ou php ([installer vsCode](https://code.visualstudio.com/Download)).
 
@@ -13,7 +13,8 @@ Il existe trois fichiers python :
 
 * *syracuse_num.py* s’occupe des calculs et d’afficher un graphique simple
 * *syracuse_graphs.py* permet d’afficher un graphique dynamique
-* *syracuse_app.py* affiche 3 graphiques cliquables (bouton droit)
+* *syracuse_app.py* affiche 3 graphiques cliquables avec le bouton droit (graphiques altitude pour les nombre de 1 à 100, vol pour les nombre de 1 à 100, graphique simple de syracuse pour nombre entré)
+* *syracuse_best.py* permet de trouver les meilleurs nombres selon des caractéristiques (plus grande altitude, plus grand rapport altitude/nombre ...)
 
 ## Nombres
 
