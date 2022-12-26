@@ -1,10 +1,24 @@
+from typing import Optional
 import matplotlib.pyplot as plt
 
 def is_even(num:int) -> bool:
+    """Renvois vrai si le nombre passé est pair
+
+    Args:
+        num (int): nombre à tester
+
+    Returns:
+        bool: 
+    """
     return num%2 == 0
 
 class SyracuseNum():
     def __init__(self, num:int) -> None:
+        """Crée un nouvel objet SyracuseNum du nombre num
+
+        Args:
+            num (int): nombre supérieur à 0 avec lequel est créé l'instance
+        """
         assert num > 0 and isinstance(num, int)
         self._num = num
 
@@ -13,10 +27,23 @@ class SyracuseNum():
     
     @property
     def is_even(self) -> bool:
+        """Vrai si le nombre de l'instance est pair, fait appel à la méthode globale is_even
+
+        Returns:
+            bool:
+        """
         return is_even(self._num)
     
     @staticmethod
-    def next(num:int):
+    def next(num:int) -> int:
+        """Fonction statique qui renvoi le prochain nombre de num d'après la suite de Syracuse
+
+        Args:
+            num (int): Nombre supérieur à 0 dont on veut le nombre suivant
+
+        Returns:
+            int: le nombre suivant
+        """
         assert num > 0
         if is_even(num):
             next = num // 2
@@ -24,14 +51,21 @@ class SyracuseNum():
             next = num *3 +1
         return next
     
-    def graphique(self, ax=None, show=True):
+    def graphique(self, ax: Optional[plt.Axes] = None, show:bool = True) -> None:
+        """Affiche un graphique avec matplotlib
+
+        Args:
+            ax (plt.Axes, optional): ax de matplotlib, peut être défini pour afficher
+                le graphique dans un graphique matplotlib déjà inititié. Defaults to None.
+            show (bool, optional): Si vrai affiche le graphique avec plt.show(). Defaults to True.
+        """
         if not ax:
             _, ax = plt.subplots()
         self._graph_plot(ax)
         if show:
             plt.show()
     
-    def _graph_plot(self, ax, *args, **kwargs):
+    def _graph_plot(self, ax:plt.Axes, *args, **kwargs):
         return ax.plot(range(len(self)), list(self), *args, **kwargs) #type:ignore
     
     def __iter__(self):
